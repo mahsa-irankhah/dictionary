@@ -11,7 +11,8 @@ function App() {
       <SearchWord />
       <footer>
         <p>
-          <a href="">open-source</a>project coded by Mahsa Irankhah
+          <a href="https://github.com/mahsa-irankhah/dictionary">open-source</a>
+          project coded by Mahsa Irankhah
         </p>
       </footer>
     </div>
