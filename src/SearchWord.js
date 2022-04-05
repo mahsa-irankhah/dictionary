@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Results from './Results';
 
 const SearchWord = () => {
     
-    let [keyword, setKeyword] = useState("")
+    let [keyword, setKeyword] = useState("");
+    let [resuls, setResults] = useState(null)
 
     const search = event => {
         event.preventDefault();
@@ -13,7 +15,7 @@ const SearchWord = () => {
     }
 
     const handleResponse = response => {
-      console.log(response.data)
+      setResults(response.data[0])
     }
 
     const wordChangeHandler = event => {
@@ -30,6 +32,7 @@ const SearchWord = () => {
           />
           <button className="btn btn-primary">search</button>
         </form>
+        <Results data={resuls} />
       </div>
     );
 };
