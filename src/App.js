@@ -10,8 +10,8 @@ function App() {
       </header>
       <SearchWord />
       <footer>
-        <p>
-          <a href="https://github.com/mahsa-irankhah/dictionary">open-source</a>
+        <p className='text-center m-3'>
+          <a href="https://github.com/mahsa-irankhah/dictionary">open-source</a>{" "}
           project coded by Mahsa Irankhah
         </p>
       </footer>
