@@ -1,4 +1,11 @@
-.results .audio audio {
-    width: 100px;
-    
+.App-header img {
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer a {
+    color: #a07959;
 }

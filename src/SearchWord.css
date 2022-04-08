@@ -1,0 +1,14 @@
+.button {
+    background: #a07959;
+    color: antiquewhite;
+}
+
+.button:hover {
+    background-color: #a079599c;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #ECECEC;
+}

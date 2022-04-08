@@ -1,12 +1,13 @@
 import './App.css';
 import SearchWord from './SearchWord';
+import logo from './images/logo1.png'
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 className="text-center m-5">Dictionary</h1>
+      <header className="App-header d-flex justify-content-center p-5">
+        <img src={logo} alt='dictionary-logo'/>
       </header>
       <SearchWord />
       <footer>

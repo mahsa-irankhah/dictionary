@@ -1,0 +1,29 @@
+section {
+    margin: 50px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.single-meaning {
+    background-image: url('./images/background2.jpg');
+    background-size: 100% 100%;
+    width: 75%;
+    height: 50%;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+.single-meaning:first-child {
+    margin-top: 0;
+}
+
+.word {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.word-section {
+   margin-left: 50px;
+   padding-left: 70px;
+   margin-bottom: 0;
+}

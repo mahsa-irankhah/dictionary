@@ -1,7 +1,7 @@
 import React from 'react';
 import Meanings from './Meanings';
-
-import Phonetics from './Phonetics'
+import Phonetics from './Phonetics';
+import './Results.css';
 
 
 const Results = (props) => {
@@ -12,19 +12,21 @@ const Results = (props) => {
     if (data) {
       return (
         <div className="results">
-          <h2>{data.word}</h2>
-          <div className="phonetics">
-            {/* <audio src={data.phonetics[0].audio} controls/> */}
-            
-            <Phonetics phonetics={data.phonetics[0]} />
+          <section className='word-section'>
+            <h2 className='word'>{data.word}</h2>
+            <div className="phonetics">
+              <Phonetics phonetics={data.phonetics[0]} />
+            </div>
+          </section>
+          <div>
+            {data.meanings.map((meaning, index) => {
+              return (
+                <section key={index} className='single-meaning'>
+                  <Meanings meanings={meaning} />
+                </section>
+              );
+            })}
           </div>
-          {data.meanings.map((meaning, index) => {
-            return (
-              <div key={index}>
-                <Meanings meanings={meaning} />
-              </div>
-            );
-          })}
         </div>
       );
     } else {

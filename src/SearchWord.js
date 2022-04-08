@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Results from './Results';
+import './SearchWord.css';
 
 const SearchWord = () => {
     
@@ -27,10 +28,10 @@ const SearchWord = () => {
           <input
             type="search"
             placeholder="type a word..."
-            className="form-control w-25 mx-2"
+            className="input w-25 mx-2"
             onChange={wordChangeHandler}
           />
-          <button className="btn btn-primary">search</button>
+          <button className="btn button">search</button>
         </form>
         <Results data={resuls} />
       </div>

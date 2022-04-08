@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import sound from "./images/sound.png";
+import './Phonetics.css';
 
 const Phonetics = (props) => {
     const phonetics = props.phonetics;
@@ -23,14 +24,12 @@ const Phonetics = (props) => {
 
 
     return (
-      <div>
-        <p>{phonetics.text}</p>
-        <div>
-          <img
-            src={sound}
-            alt="sound"
-            onClick={playAudio}
-          />
+      <div className="phonetics d-flex">
+        <div className="sound-icon">
+          <img src={sound} alt="sound" onClick={playAudio} />
+        </div>
+        <div className="phonetics-text-div">
+          <p className="phonetics-text">{phonetics.text}</p>
         </div>
       </div>
     );
