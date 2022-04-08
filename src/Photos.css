@@ -1,0 +1,23 @@
+.images-div {
+    position: relative;
+}
+
+.frame {
+    border-radius: 4px;
+    position: relative;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.word-photo {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    border-radius: 0px;
+    filter: sepia(60%);
+}
+
+@media (max-width:1300px ) {
+    .photos {
+        display: none;
+    }
+}
