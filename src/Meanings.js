@@ -4,6 +4,7 @@ import './Meanings.css'
 
 const Meanings = (props) => {
     const meanings = props.meanings;
+    console.log(meanings)
     
     return (
       <div>
