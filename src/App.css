@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .App-header img {
     margin: 0 auto;
 }
@@ -8,4 +12,16 @@ footer {
 
 footer a {
     color: #a07959;
+}
+
+@media (max-width:768px) {
+    footer {
+        text-align: center;
+    }
+    footer p {
+      font-size: 15px;
+    }
+    .App-header img {
+        max-width: 100%;
+    }
 }

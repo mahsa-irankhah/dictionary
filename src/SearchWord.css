@@ -1,3 +1,5 @@
+
+
 .button {
     background: #a07959;
     color: antiquewhite;
@@ -12,4 +14,20 @@
     border-bottom: 1px solid black;
     background-color: #ECECEC;
     font-size: 30px;
+}
+
+
+@media (max-width:768px) {
+    form {
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .input {
+        width: 200px;
+        font-size: 15px;
+        margin: 0;
+    }
 }

@@ -6,7 +6,7 @@ const Synonyms = (props) => {
     
 
 if (synonyms) {
-    console.log(synonyms)
+    
   return (
     <ul className="d-flex">
       

@@ -31,7 +31,7 @@ const SearchWord = () => {
 
         const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
         const headers = {'Authorization': `Bearer ${pexelsApiKey}`}
-        axios.get(pexelsApiUrl, {headers: headers}).then(pexelsHandleResponse)
+        axios.get(pexelsApiUrl, {headers: headers}).then(pexelsHandleResponse).catch(error => console.log(error))
     }
 
     const pexelsHandleResponse = response => {
@@ -46,7 +46,7 @@ const SearchWord = () => {
           <input
             type="search"
             placeholder="type a word..."
-            className="input w-25 mx-2"
+            className="input mx-2"
             onChange={wordChangeHandler}
           />
           <button className="btn button">search</button>
